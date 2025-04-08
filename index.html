@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saiteja Juluru | Portfolio</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #1e1e1e;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5em;
+      color: #00adb5;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1em;
+    }
+    .nav-links li a {
+      color: #f0f0f0;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav-links li a:hover {
+      color: #00adb5;
+    }
+    .hamburger {
+      display: none;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #f0f0f0;
+    }
+    .hero {
+      padding: 5em 1em;
+      text-align: center;
+      background: linear-gradient(145deg, #1e1e1e, #292929);
+    }
+    .hero h1 {
+      font-size: 3em;
+      color: #00adb5;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 0.5em;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.5em;
+      padding: 0.75em 1.5em;
+      background: #00adb5;
+      color: #121212;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+    .social a {
+      margin: 0 0.5em;
+      color: #00adb5;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #1e1e1e;
+        right: 0;
+        top: 60px;
+        padding: 1em;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Saiteja Juluru</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <header class="hero">
+    <h1>Hi, I'm Saiteja Juluru</h1>
+    <p>Full Stack Developer | ML Enthusiast | Software Engineer</p>
+    <a href="https://drive.google.com/file/d/1_DRxlc_wmZqoLfShfhiJztp9cVoMOZCD/view?usp=sharing" download class="btn">Download Resume</a>
+  </header>
+
+  <footer>
+    <p>&copy; 2025 Saiteja Juluru</p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/juluru-saiteja-491970211/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/julurusaiteja39" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

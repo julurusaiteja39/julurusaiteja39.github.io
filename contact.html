@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Saiteja Juluru</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #1e1e1e;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5em;
+      color: #00adb5;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1em;
+    }
+    .nav-links li a {
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+    .nav-links li a:hover {
+      color: #00adb5;
+    }
+    .hamburger {
+      display: none;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 4em auto;
+      padding: 2em;
+      background: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 173, 181, 0.2);
+    }
+    h2 {
+      text-align: center;
+      color: #00adb5;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    input, textarea {
+      padding: 0.8em;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    textarea {
+      resize: vertical;
+      height: 150px;
+    }
+    button {
+      background-color: #00adb5;
+      color: #121212;
+      border: none;
+      padding: 0.8em;
+      border-radius: 5px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #019aa3;
+    }
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 1em;
+      margin-top: 3em;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #1e1e1e;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        padding: 1em;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Saiteja Juluru</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input name="name" type="text" placeholder="Your Name" required />
+      <input name="email" type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Enter a valid email address" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Saiteja Juluru</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('active');
+    }
+  </script>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('active');
+    }
+
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      fetch("https://formspree.io/f/xzzeklao", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      }).then((response) => {
+        if (response.ok) {
+          alert("Thanks for your message!");
+          form.reset();
+        } else {
+          alert("Oops! There was a problem. Please try again.");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+</html>

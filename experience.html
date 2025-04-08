@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience | Saiteja Juluru</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #1e1e1e;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5em;
+      color: #00adb5;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1em;
+    }
+    .nav-links li a {
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+    .nav-links li a:hover {
+      color: #00adb5;
+    }
+    .hamburger {
+      display: none;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #f0f0f0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2em;
+    }
+    .job-card {
+      background: #1e1e1e;
+      padding: 2em;
+      border-radius: 10px;
+      margin-bottom: 2em;
+      box-shadow: 0 0 15px rgba(0, 173, 181, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+    .job-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-size: 2em;
+      color: #00adb5;
+    }
+    .job-card h2 {
+      margin: 0;
+      color: #00adb5;
+    }
+    .job-card h3 {
+      margin: 0.5em 0 1em 0;
+      font-weight: normal;
+      color: #ccc;
+    }
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #1e1e1e;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        padding: 1em;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Saiteja Juluru</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <div class="container">
+    <div class="job-card">
+      <div class="job-header">
+        <span class="material-symbols-outlined">school</span>
+        <h2>Graduate Student Assistant</h2>
+      </div>
+      <h3>Saint Louis University &mdash; 2024</h3>
+      <p>Conducted interactive tutoring sessions and office hours to support students in mastering course concepts, leading to a 30% improvement in comprehension and a 15% increase in exam performance. Assisted in designing and delivering instructional materials, ensuring clarity and engagement in coursework. Collaborated with professors to develop and administer assessments, implementing a standardized rubric that improved grading accuracy and fairness, achieving a 98% student satisfaction rate. To uphold academic integrity, created randomized assessment materials, reducing instances of academic misconduct by 25%.</p>
+    </div>
+
+    <div class="job-card">
+      <div class="job-header">
+        <span class="material-symbols-outlined">work</span>
+        <h2>Software Engineer</h2>
+      </div>
+      <h3>Zaggle &mdash; Sep 2022 – Jul 2023</h3>
+      <p>Optimized backend systems using Ruby on Rails, leading to a 20% increase in financial performance. Improved PostgreSQL queries for faster data retrieval, boosting speed by 30%. Revamped the frontend with ReactJS to improve responsiveness, increasing user engagement by 25%. Integrated Agile practices and automated testing to reduce software bugs by 30% and speed up release cycles by 25%.</p>
+    </div>
+
+    <div class="job-card">
+      <div class="job-header">
+        <span class="material-symbols-outlined">engineering</span>
+        <h2>Software Engineer Intern</h2>
+      </div>
+      <h3>Zaggle &mdash; Jan 2022 – Aug 2022</h3>
+      <p>Optimized CI/CD workflows using Jenkins, reducing deployment time by 35%. Refactored backend Ruby on Rails code and modularized ReactJS components to improve scalability and reduce code redundancy by 20%. Automated testing and Docker-based deployments, cutting manual intervention by 40% and improving software release reliability.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Saiteja Juluru</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
