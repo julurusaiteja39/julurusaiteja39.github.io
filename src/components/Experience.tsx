@@ -21,52 +21,54 @@ const Experience = () => {
   const experiences: ExperienceItem[] = [
     {
       id: 1,
-      company: 'TechCorp Solutions',
-      position: 'Senior Full Stack Developer',
-      duration: 'Jan 2023 - Present',
-      location: 'San Francisco, CA',
+      company: 'Saint Louis University',
+      position: 'Graduate Student Assistant',
+      duration: 'Jan 2024 - June 2024',
+      location: 'Saint Louis, MO',
       description: [
-        'Led development of microservices architecture serving 100k+ daily active users',
-        'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Mentored junior developers and conducted code reviews',
-        'Collaborated with product team to deliver features on time and within scope'
+        'Mentored 35+ students on software engineering fundamentals including OOP, Git, and full-stack development workflows.',
+        'Collaborated with faculty to design and implement 3 major coding projects focused on Agile, REST APIs, and modular architecture.',
+        'Conducted 50+ code reviews ensuring best practices, scalability, and clean coding standards using JavaScript, Flask, and PostgreSQL.',
+        'Built Python-based automation scripts that streamlined grading, reducing manual evaluation time by 25% across 100+ submissions.'
       ],
-      technologies: ['React', 'Node.js', 'AWS', 'Docker', 'PostgreSQL'],
-      logo: 'https://images.unsplash.com/photo-1549924231-f129b911e442?w=100&h=100&fit=crop',
-      website: 'https://techcorp.com'
+      technologies: ['JavaScript', 'Python', 'SQL', 'Flask', 'GitHub', 'Agile', 'REST APIs', 'Code Reviews', 'Automation Scripting'],
+      logo: 'https://www.slu.edu/marcom/tools-downloads/-img/logomark/slu-logomark-blue-rgb.png?w=100&h=100&fit=crop',
+      website: 'https://www.slu.edu/'
     },
     {
       id: 2,
-      company: 'StartupXYZ',
+      company: 'Zaggle Prepaid Ocean Services',
       position: 'Full Stack Developer',
-      duration: 'Mar 2021 - Dec 2022',
-      location: 'Remote',
+      duration: 'Jan 2021 - July 2023',
+      location: 'Hyderabad, Telangana, India',
       description: [
-        'Built responsive web applications using React and TypeScript',
-        'Developed RESTful APIs with Node.js and Express',
-        'Integrated third-party services including payment gateways',
-        'Optimized application performance resulting in 40% faster load times'
+        'Developed full-stack financial web applications using ReactJS, Ruby on Rails, and Spring Boot.',
+        'Improved application modularity and performance, boosting platform efficiency by 20%.',
+        'Optimized PostgreSQL queries, achieving 30% faster data retrieval in high-volume transaction modules.',
+        'Designed and maintained CI/CD pipelines using Docker and Jenkins, reducing deployment time by 35%.',
+        'Implemented unit, integration, and E2E test suites, improving software quality by 25%.',
+        'Collaborated in Agile sprints to deliver secure, scalable features while reducing code redundancy by 20% through legacy refactoring.'
       ],
-      technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Stripe'],
-      logo: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=100&h=100&fit=crop',
-      website: 'https://startupxyz.com'
+      technologies: ['Java Springboot', 'Ruby on Rails', 'ReactJS', 'Redux', 'PostgreSQL', 'Docker', 'Gitlab', 'Postman', 'Jenkins', 'Microservices'],
+      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7CsEAv2f7ral3OD_ZlWJ7S1FRK_vBPpwu0Q&s?w=100&h=100&fit=crop',
+      website: 'https://www.zaggle.in/'
     },
-    {
-      id: 3,
-      company: 'Digital Agency Pro',
-      position: 'Frontend Developer',
-      duration: 'Jun 2020 - Feb 2021',
-      location: 'New York, NY',
-      description: [
-        'Created pixel-perfect websites from design mockups',
-        'Implemented responsive designs for various client projects',
-        'Collaborated with designers and backend developers',
-        'Maintained and updated existing client websites'
-      ],
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'SASS'],
-      logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&h=100&fit=crop',
-      website: 'https://digitalagencypro.com'
-    },
+    // {
+    //   id: 3,
+    //   company: 'Digital Agency Pro',
+    //   position: 'Frontend Developer',
+    //   duration: 'Jun 2020 - Feb 2021',
+    //   location: 'New York, NY',
+    //   description: [
+    //     'Created pixel-perfect websites from design mockups',
+    //     'Implemented responsive designs for various client projects',
+    //     'Collaborated with designers and backend developers',
+    //     'Maintained and updated existing client websites'
+    //   ],
+    //   technologies: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'SASS'],
+    //   logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&h=100&fit=crop',
+    //   website: 'https://digitalagencypro.com'
+    // },
   ];
 
   const containerVariants = {

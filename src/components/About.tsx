@@ -5,40 +5,91 @@ import { Code, Palette, Rocket, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
+  // const skills = [
+  //   { name: 'Spring Boot', icon: '🍃', color: 'from-green-400 to-green-600' },
+  //   { name: 'Ruby On Rails', icon: '💎', color: 'from-red-400 to-red-600' },
+  //   { name: 'FastAPI', icon: '⚡', color: 'from-teal-400 to-teal-600' },
+  //   { name: 'Django', icon: '🐍', color: 'from-green-500 to-green-700' },
+  //   { name: 'React/Next.js', icon: '⚛️', color: 'from-blue-400 to-blue-600' },
+  //   { name: 'TypeScript', icon: '📘', color: 'from-blue-500 to-blue-700' },
+  //   { name: 'Angular', icon: '🅰️', color: 'from-green-400 to-green-600' },
+  //   { name: 'Python', icon: '🐍', color: 'from-yellow-400 to-yellow-600' },
+  //   { name: 'JavaScript', icon: '📜', color: 'from-yellow-400 to-yellow-600' },
+  //   { name: 'Java', icon: '☕', color: 'from-orange-400 to-orange-600' },
+  //   { name: 'C/C++', icon: '⚙️', color: 'from-purple-400 to-purple-600' },
+  //   { name: 'HTML5/CSS', icon: '🌐', color: 'from-orange-400 to-orange-600' },
+  //   // { name: 'CSS3', icon: '🎨', color: 'from-blue-400 to-blue-600' },
+  //   { name: 'MySQL', icon: '🗄️', color: 'from-blue-400 to-blue-600' },
+  //   { name: 'PostgreSQL', icon: '🐘', color: 'from-blue-400 to-blue-600' },
+  //   { name: 'MongoDB', icon: '🍃', color: 'from-green-400 to-green-600' },
+  //   // { name: 'Redis', icon: '🔴', color: 'from-red-400 to-red-600' },
+  //   // { name: 'Firebase', icon: '🔥', color: 'from-orange-400 to-orange-600' },
+  //   { name: 'Docker', icon: '🐳', color: 'from-blue-400 to-cyan-500' },
+  //   // { name: 'Kubernetes', icon: '⎈', color: 'from-blue-500 to-purple-500' },
+  //   { name: 'Jenkins', icon: '🔧', color: 'from-orange-400 to-orange-600' },
+  //   // { name: 'Git', icon: '📝', color: 'from-orange-400 to-red-500' },
+  //   { name: 'GitHub', icon: '🐙', color: 'from-gray-600 to-gray-800' },
+  //   { name: 'AWS', icon: '☁️', color: 'from-orange-400 to-orange-600' },
+  //   // { name: 'Azure', icon: '☁️', color: 'from-blue-400 to-blue-600' },
+  //   { name: 'GCP', icon: '☁️', color: 'from-blue-400 to-green-500' },
+  //   { name: 'UI/UX Design', icon: '🎨', color: 'from-purple-400 to-purple-600' },
+  //   // { name: 'Figma', icon: '🎨', color: 'from-purple-400 to-pink-500' },
+  //   // { name: 'Adobe XD', icon: '🎨', color: 'from-pink-400 to-purple-500' },
+  //   { name: 'Linux', icon: '🐧', color: 'from-gray-600 to-gray-800' },
+  //   { name: 'Windows', icon: '🪟', color: 'from-blue-400 to-blue-600' },
+  //   { name: 'macOS', icon: '🍎', color: 'from-gray-400 to-gray-600' }
+  // ];
   const skills = [
-    { name: 'Spring Boot', icon: '🍃', color: 'from-green-400 to-green-600' },
-    { name: 'Ruby On Rails', icon: '💎', color: 'from-red-400 to-red-600' },
-    { name: 'FastAPI', icon: '⚡', color: 'from-teal-400 to-teal-600' },
-    { name: 'Django', icon: '🐍', color: 'from-green-500 to-green-700' },
-    { name: 'React/Next.js', icon: '⚛️', color: 'from-blue-400 to-blue-600' },
-    { name: 'TypeScript', icon: '📘', color: 'from-blue-500 to-blue-700' },
-    { name: 'Angular', icon: '🅰️', color: 'from-green-400 to-green-600' },
+    // Languages
+    { name: 'Java', icon: '☕', color: 'from-orange-400 to-orange-600' },
     { name: 'Python', icon: '🐍', color: 'from-yellow-400 to-yellow-600' },
     { name: 'JavaScript', icon: '📜', color: 'from-yellow-400 to-yellow-600' },
-    { name: 'Java', icon: '☕', color: 'from-orange-400 to-orange-600' },
+    { name: 'SQL', icon: '🧾', color: 'from-gray-400 to-gray-600' },
+    { name: 'HTML/CSS', icon: '🌐', color: 'from-orange-400 to-orange-600' },
     { name: 'C/C++', icon: '⚙️', color: 'from-purple-400 to-purple-600' },
-    { name: 'HTML5/CSS', icon: '🌐', color: 'from-orange-400 to-orange-600' },
-    // { name: 'CSS3', icon: '🎨', color: 'from-blue-400 to-blue-600' },
-    { name: 'MySQL', icon: '🗄️', color: 'from-blue-400 to-blue-600' },
+
+    // Frameworks
+    { name: 'Spring Boot', icon: '🍃', color: 'from-green-400 to-green-600' },
+    { name: 'Ruby on Rails', icon: '💎', color: 'from-red-400 to-red-600' },
+    { name: 'FastAPI', icon: '⚡', color: 'from-teal-400 to-teal-600' },
+    { name: 'Flask', icon: '🍶', color: 'from-gray-500 to-gray-700' },
+    { name: 'ReactJS', icon: '⚛️', color: 'from-blue-400 to-blue-600' },
+    { name: 'TypeScript', icon: '📘', color: 'from-blue-500 to-blue-700' },
+    { name: 'Angular', icon: '🅰️', color: 'from-green-400 to-green-600' },
+
+    // Libraries & Data
+    { name: 'pandas', icon: '🐼', color: 'from-gray-400 to-gray-600' },
+    { name: 'NumPy', icon: '📊', color: 'from-yellow-300 to-yellow-500' },
+    { name: 'Matplotlib', icon: '📈', color: 'from-purple-300 to-purple-500' },
+    { name: 'OpenCV', icon: '👁️', color: 'from-blue-300 to-blue-500' },
+    { name: 'Face Recognition', icon: '🧠', color: 'from-pink-300 to-pink-500' },
+
+    // Databases
     { name: 'PostgreSQL', icon: '🐘', color: 'from-blue-400 to-blue-600' },
+    { name: 'MySQL', icon: '🗄️', color: 'from-blue-400 to-blue-600' },
     { name: 'MongoDB', icon: '🍃', color: 'from-green-400 to-green-600' },
-    // { name: 'Redis', icon: '🔴', color: 'from-red-400 to-red-600' },
-    // { name: 'Firebase', icon: '🔥', color: 'from-orange-400 to-orange-600' },
-    { name: 'Docker', icon: '🐳', color: 'from-blue-400 to-cyan-500' },
-    // { name: 'Kubernetes', icon: '⎈', color: 'from-blue-500 to-purple-500' },
-    { name: 'Jenkins', icon: '🔧', color: 'from-orange-400 to-orange-600' },
-    // { name: 'Git', icon: '📝', color: 'from-orange-400 to-red-500' },
-    { name: 'GitHub', icon: '🐙', color: 'from-gray-600 to-gray-800' },
+    { name: 'SQLite', icon: '💾', color: 'from-gray-500 to-gray-700' },
+
+    // Cloud and DevOps
     { name: 'AWS', icon: '☁️', color: 'from-orange-400 to-orange-600' },
-    // { name: 'Azure', icon: '☁️', color: 'from-blue-400 to-blue-600' },
-    { name: 'GCP', icon: '☁️', color: 'from-blue-400 to-green-500' },
-    { name: 'UI/UX Design', icon: '🎨', color: 'from-purple-400 to-purple-600' },
-    // { name: 'Figma', icon: '🎨', color: 'from-purple-400 to-pink-500' },
-    // { name: 'Adobe XD', icon: '🎨', color: 'from-pink-400 to-purple-500' },
+    { name: 'Git', icon: '📝', color: 'from-orange-400 to-red-500' },
+    { name: 'Docker', icon: '🐳', color: 'from-blue-400 to-cyan-500' },
+    { name: 'Jenkins', icon: '🔧', color: 'from-orange-400 to-orange-600' },
+    { name: 'CircleCI', icon: '⭕', color: 'from-green-400 to-green-600' },
+    { name: 'Firebase', icon: '🔥', color: 'from-orange-400 to-orange-600' },
+
+    // Developer Tools
+    { name: 'JIRA', icon: '📋', color: 'from-indigo-400 to-indigo-600' },
+    { name: 'Postman', icon: '📮', color: 'from-orange-400 to-orange-600' },
+    { name: 'VS Code', icon: '🧪', color: 'from-blue-400 to-blue-600' },
+    { name: 'Figma', icon: '🎨', color: 'from-purple-400 to-pink-500' },
+
+    // OS/Environment
     { name: 'Linux', icon: '🐧', color: 'from-gray-600 to-gray-800' },
     { name: 'Windows', icon: '🪟', color: 'from-blue-400 to-blue-600' },
     { name: 'macOS', icon: '🍎', color: 'from-gray-400 to-gray-600' }
   ];
+
 
 
   const highlights = [
@@ -124,20 +175,16 @@ const About = () => {
             <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">My Journey</h3>
             <div className="space-y-6 text-gray-600 dark:text-gray-300">
               <p>
-                Started my journey in web development during college, fascinated by the 
-                endless possibilities of turning ideas into interactive experiences. 
-                What began as curiosity quickly became a passion.
+                My journey in web development began during college, where I was fascinated by how code could turn ideas into real, interactive experiences. What started as a simple curiosity soon turned into a deep passion for building impactful software.
               </p>
               <p>
-                I specialize in creating modern, responsive web applications using 
-                Java Springboot, Ruby on Rails, React, Angular and TypeScript. 
-                I love working on both frontend and backend, 
-                ensuring seamless user experiences from database to interface.
+                Professionally, I've worked on diverse projects ranging from enterprise-level platforms to real-time AI applications. I have hands-on experience developing scalable full-stack solutions using Java Spring Boot, Ruby on Rails, React, Angular, and TypeScript. My focus has always been on delivering end-to-end functionality from designing clean, responsive frontends to building secure, efficient backends and database layers.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, 
-                contributing to open source projects, or sharing knowledge with 
-                the developer community.
+                I've also contributed to cloud-based deployments and CI/CD pipelines, collaborating with cross-functional teams to deliver production-ready software. These experiences have strengthened both my technical and problem-solving skills in fast-paced environments.
+              </p>
+              <p>
+                Outside of work, you’ll find me experimenting with new technologies, contributing to open-source projects, and actively engaging with the developer community to share knowledge and learn from others.
               </p>
             </div>
           </motion.div>
