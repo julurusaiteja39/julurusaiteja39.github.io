@@ -34,13 +34,14 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 whitespace-nowrap"
             >
               <span className="text-gray-900 dark:text-white">Hi, I'm </span>
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Saiteja Juluru
               </span>
             </motion.h1>
+
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}

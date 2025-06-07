@@ -28,46 +28,67 @@ const Projects = () => {
       description: 'Face recognition-based attendance system with real-time logging and high accuracy.',
       fullDescription: 'Developed a facial recognition-based smart attendance system using FastAPI and MongoDB. The system processes over 100 concurrent requests for real-time attendance logging, achieving 95%+ identity verification accuracy. Features include secure face authentication, responsive React frontend, real-time analytics dashboard, and scalable architecture deployed on Heroku and Vercel. Designed to prevent proxy attendance and reduce manual effort by 80%.',
       image: 'https://plus.unsplash.com/premium_photo-1680807868966-90a84c68c944?w=600&h=400&fit=crop',
-      technologies: ['FastApi', 'ReactTS', 'MongoDB', 'Computer Vision', 'Vercel', 'Heroku', 'Face Recognition'],
+      technologies: ['Face Recognition', 'FastApi', 'ReactTS', 'MongoDB', 'Computer Vision', 'Vercel', 'Heroku'],
       github: 'https://github.com/sjuluru1/SAMS-facial-recognition',
       category: 'ai_ml'
     },
     {
       id: 2,
-      title: '',
-      description: 'Collaborative task management with real-time updates',
-      fullDescription: 'A collaborative task management application with real-time synchronization using Socket.io. Built with React, TypeScript, and Firebase. Features include drag-and-drop task organization, team collaboration, file attachments, deadline tracking, and push notifications.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-      technologies: ['React', 'TypeScript', 'Firebase', 'Socket.io'],
-      github: 'https://github.com',
+      title: 'Expense App for Visually Impaired',
+      description: 'Voice-assisted expense tracking tailored for visually impaired users',
+      fullDescription: 'An accessible expense management application designed specifically for visually impaired users. Built with React, Springboot, and speech recognition libraries, the app features voice input for adding transactions, audio feedback for confirmations, and high-contrast UI with screen reader support. Includes budget tracking, categorized spending insights, and offline capabilities to ensure inclusivity and independence in managing finances.',
+      image: 'https://plus.unsplash.com/premium_photo-1681582863624-24337f436b78?w=600&h=400&fit=crop',
+      technologies: ['Bard LLM', 'Springboot', 'React', 'PostgreSQL', 'Postman', 'Selenium', 'Docker', 'CircleCI'],
+      github: 'https://github.com/PSDApollo/ExpenseManagementSystem',
       category: 'ai_ml'
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather app with location-based forecasts',
-      fullDescription: 'A responsive weather dashboard that provides detailed weather information and forecasts. Built with React and integrated with OpenWeatherMap API. Features include current weather, 7-day forecast, interactive maps, weather alerts, and location-based suggestions.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop',
-      technologies: ['React', 'OpenWeather API', 'Chart.js', 'CSS3'],
-      github: 'https://github.com',
-      category: 'frontend'
+      title: 'Sign Language Recognition',
+      description: 'AI-based sign language recognition system using OpenCV and Python',
+      fullDescription: 'A real-time sign language recognition system developed using OpenCV and Python, achieving 90% accuracy in gesture classification. Designed to bridge communication gaps for hearing-impaired individuals, the system leverages image preprocessing, hand segmentation, and machine learning techniques for dynamic sign detection. Features include live webcam input, gesture prediction overlay, and a user-friendly interface for accessibility testing and deployment.',
+      image: 'https://plus.unsplash.com/premium_photo-1715474788331-b9e5bf96c872?w=600&h=400&fit=crop',
+      technologies: ["Python", "OpenCV", "NumPy", "scikit-learn", "MediaPipe", "Jupyter Notebook", "Computer Vision", "Machine Learning", "Real-time Processing"],
+      github: 'https://www.ijsr.net/archive/v11i5/SR22503220851.pdf',
+      category: 'publication'
     },
     {
       id: 4,
-      title: 'REST API Service',
-      description: 'Scalable API with authentication and rate limiting',
-      fullDescription: 'A robust REST API service built with Node.js and Express. Features include JWT authentication, rate limiting, data validation, comprehensive logging, automated testing, and documentation with Swagger. Deployed on AWS with CI/CD pipeline.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop',
-      technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT', 'AWS'],
-      github: 'https://github.com',
-      category: 'backend'
+      title: 'Gift Card Platform',
+      description: "Digital gift card platform built with React, Ruby on Rails, and PostgreSQL.",
+      fullDescription: "A full-stack web platform enabling users to purchase, send, and redeem digital gift cards. The frontend was developed using ReactJS for an interactive user experience, while the backend used Ruby on Rails to manage business logic and APIs. PostgreSQL was used for secure and scalable data storage. Features include gift card templates, user authentication, balance tracking, and admin controls for managing card issuances.",
+      image: 'https://plus.unsplash.com/premium_photo-1728897798011-3de899171c76?w=600&h=400&fit=crop',
+      technologies: ['Ruby on Rails', 'ReactJS', 'PostgreSQL', 'HTML/CSS', 'Bootstrap', 'Jenkins'],
+      github: 'https://github.com/julurusaiteja39/GiftCardApplication',
+      category: 'fullstack'
+    },
+    {
+      id: 5,
+      title: 'Farmers Loan Processing',
+      description: "Loan processing system for farmers built using Java Spring Boot.",
+      fullDescription: "A robust backend system developed with Java Spring Boot to streamline the loan application and approval process for farmers. The system includes modules for loan application submission, eligibility validation, document verification, and status tracking. It ensures secure data handling, automated workflow management, and easy integration with financial institutions for faster disbursement of agricultural loans.",
+      image: 'https://images.unsplash.com/photo-1636973879067-9404573bdc78?w=600&h=400&fit=crop',
+      technologies: ['Springboot', 'MySQL', 'HTML/CSS', 'Bootstrap','Javascript', 'Postman', 'Jenkins'],
+      github: 'https://github.com/julurusaiteja39/FarmerLoanProcessing',
+      category: 'fullstack'
+    },
+    {
+      id: 6,
+      title: 'Instagram Reels Clone',
+      description: "A dynamic Instagram Reels clone built using JavaScript and modern web APIs.",
+      fullDescription: "An interactive single-page application replicating core functionalities of Instagram Reels, developed using vanilla JavaScript, HTML5, and CSS3. Features include vertical video scrolling, autoplay, like/comment interactions, and smooth UI transitions. This project demonstrates efficient media rendering, responsive design principles, and real-time user interaction handling for short-form video content.",
+      image: 'https://images.unsplash.com/photo-1611262588024-d12430b98920?w=600&h=400&fit=crop',
+      technologies: ['ReactJS', 'ReactJS', 'Static', 'HTML/CSS', 'Bootstrap'],
+      github: 'https://github.com/julurusaiteja39/Instagram_Reels_Clone',
+      category: 'fullstack'
     },
   ];
 
   const categories = [
     { id: 'all', label: 'All Projects' },
     { id: 'ai_ml', label: 'AI/LLM Projects'},
-    { id: 'fullstack', label: 'Full Stack' }
+    { id: 'fullstack', label: 'Full Stack' },
+    { id: 'publication', label: 'Publications'}
   ];
 
   const filteredProjects = filter === 'all' 
