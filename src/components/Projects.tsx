@@ -14,7 +14,6 @@ interface Project {
   image: string;
   technologies: string[];
   github: string;
-  live: string;
   category: string;
 }
 
@@ -29,21 +28,19 @@ const Projects = () => {
       description: 'Face recognition-based attendance system with real-time logging and high accuracy.',
       fullDescription: 'Developed a facial recognition-based smart attendance system using FastAPI and MongoDB. The system processes over 100 concurrent requests for real-time attendance logging, achieving 95%+ identity verification accuracy. Features include secure face authentication, responsive React frontend, real-time analytics dashboard, and scalable architecture deployed on Heroku and Vercel. Designed to prevent proxy attendance and reduce manual effort by 80%.',
       image: 'https://plus.unsplash.com/premium_photo-1680807868966-90a84c68c944?w=600&h=400&fit=crop',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
-      github: 'https://github.com',
-      live: 'https://demo.com',
-      category: 'fullstack'
+      technologies: ['FastApi', 'ReactTS', 'MongoDB', 'Computer Vision', 'Vercel', 'Heroku', 'Face Recognition'],
+      github: 'https://github.com/sjuluru1/SAMS-facial-recognition',
+      category: 'ai_ml'
     },
     {
       id: 2,
-      title: 'Task Management App',
+      title: '',
       description: 'Collaborative task management with real-time updates',
       fullDescription: 'A collaborative task management application with real-time synchronization using Socket.io. Built with React, TypeScript, and Firebase. Features include drag-and-drop task organization, team collaboration, file attachments, deadline tracking, and push notifications.',
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
       technologies: ['React', 'TypeScript', 'Firebase', 'Socket.io'],
       github: 'https://github.com',
-      live: 'https://demo.com',
-      category: 'frontend'
+      category: 'ai_ml'
     },
     {
       id: 3,
@@ -53,7 +50,6 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop',
       technologies: ['React', 'OpenWeather API', 'Chart.js', 'CSS3'],
       github: 'https://github.com',
-      live: 'https://demo.com',
       category: 'frontend'
     },
     {
@@ -64,7 +60,6 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop',
       technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT', 'AWS'],
       github: 'https://github.com',
-      live: 'https://demo.com',
       category: 'backend'
     },
   ];
@@ -255,12 +250,12 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex gap-4">
-                    <Button className="flex-1" asChild>
+                    {/* <Button className="flex-1" asChild>
                       <a href={selectedProject.live} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Live Demo
                       </a>
-                    </Button>
+                    </Button> */}
                     <Button variant="outline" className="flex-1" asChild>
                       <a href={selectedProject.github} target="_blank" rel="noopener noreferrer">
                         <Github className="w-4 h-4 mr-2" />
