@@ -1,152 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saiteja Juluru | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background-color: #121212;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
-    nav {
-      background-color: #1e1e1e;
-      padding: 1em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-size: 1.5em;
-      color: #00adb5;
-    }
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 1em;
-    }
-    .nav-links li a {
-      color: #f0f0f0;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    .nav-links li a:hover {
-      color: #00adb5;
-    }
-    .hamburger {
-      display: none;
-      font-size: 1.5em;
-      cursor: pointer;
-      color: #f0f0f0;
-    }
-    .hero {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: linear-gradient(145deg, #1e1e1e, #292929);
-      padding: 2em 1em;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai Teja - Full Stack Developer Portfolio</title>
+    <meta name="description" content="Full Stack Developer & UI/UX Enthusiast - Portfolio showcasing modern web applications and creative solutions" />
+    <meta name="author" content="Sai Teja" />
 
-    .hero img {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      margin-bottom: 1.5em;
-      box-shadow: 0 0 20px rgba(0, 173, 181, 0.5);
-    }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    .hero h1 {
-      font-size: 3.5em;
-      color: #00adb5;
-    }
-    .hero p {
-      font-size: 1.4em;
-      margin-top: 0.5em;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 1.5em;
-      padding: 1em 2em;
-      background: #00adb5;
-      color: #121212;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1em;
-    }
-    footer {
-      background-color: #1e1e1e;
-      text-align: center;
-      padding: 1em;
-    }
-    .social a {
-      margin: 0 0.5em;
-      color: #00adb5;
-      text-decoration: none;
-    }
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background: #1e1e1e;
-        right: 0;
-        top: 60px;
-        padding: 1em;
-      }
-      .nav-links.active {
-        display: flex;
-      }
-      .hamburger {
-        display: block;
-      }
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <div class="logo">Saiteja Juluru</div>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-  </nav>
+    <meta property="og:title" content="Sai Teja - Full Stack Developer Portfolio" />
+    <meta property="og:description" content="Full Stack Developer & UI/UX Enthusiast - Portfolio showcasing modern web applications and creative solutions" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-  <header class="hero">
-    <img src="prfile.png" alt="Saiteja Juluru">
-    <h1>Hi, I'm Saiteja Juluru</h1>
-    <p>Full Stack Developer | ML Enthusiast | Software Engineer</p>
-    <a href="https://drive.google.com/file/d/1rxDn44HlHdXa-GFhKNb0-FaoN2YGQXP9/view?usp=sharing" download class="btn">Download Resume</a>
-  </header>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
 
-  <footer>
-    <p>&copy; 2025 Saiteja Juluru</p>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/saiteja-juluru-491970211/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/julurusaiteja39" target="_blank">GitHub</a>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById('nav-links').classList.toggle('active');
-    }
-  </script>
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
