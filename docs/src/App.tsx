@@ -9,6 +9,11 @@ import NotFound from "./pages/NotFound";
 // Portfolio components
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +34,11 @@ const App = () => {
                 <>
                   <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                   <Hero />
+                  <About />
+                  <Projects />
+                  <Experience />
+                  <Education />
+                  <Contact />
                   {/* Add more sections like <About />, <Projects />, <Footer /> */}
                 </>
               }
