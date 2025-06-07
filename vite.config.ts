@@ -21,7 +21,6 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/julurusaiteja39.github.io/",
   plugins: [
     react(),
     mode === 'development' &&
