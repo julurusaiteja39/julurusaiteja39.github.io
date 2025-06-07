@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import profileImage from './profile.png';
 
 const Hero = () => {
+  console.log("Hero rendered");
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {

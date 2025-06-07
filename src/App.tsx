@@ -18,6 +18,7 @@ import Contact from "./components/Contact";
 const queryClient = new QueryClient();
 
 const App = () => {
+  console.log("App rendered");
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
