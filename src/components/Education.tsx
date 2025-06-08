@@ -22,43 +22,55 @@ const Education = () => {
   const education: EducationItem[] = [
     {
       id: 1,
-      institution: 'University of Technology',
-      degree: 'Bachelor of Science',
+      institution: 'Saint Louis University',
+      degree: 'Master of Science',
       field: 'Computer Science',
-      duration: '2018 - 2022',
-      location: 'San Francisco, CA',
-      gpa: '3.8/4.0',
+      duration: '2023 - 2025',
+      location: 'Saint Louis, MO',
+      gpa: '3.85/4.0',
       description: [
-        'Focused on software engineering, algorithms, and data structures',
-        'Completed capstone project on distributed systems',
-        'Active member of Computer Science Society',
+        'Completed a rigorous MS program with a focus on distributed systems, parallel programming, and deep learning',
+        'Took advanced coursework in Algorithms, Machine Learning, Human-Computer Interaction, and Computer Vision',
+        'Worked on practical projects in Software Engineering and Concurrent Programming using Java and Python',
+        'Delivered presentations in Computer Science Colloquium and engaged in discussions on ethical computing practices'
       ],
+
       achievements: [
-        'Dean\'s List (4 semesters)',
-        'Outstanding Student Award 2021',
-        'Hackathon Winner - Best Technical Innovation',
+        'Dean\' List - All Semesters',
+        'Top Graduate of the Cohort',
+        'Graduate Research Assistant Recognition',
+        'Highest GPA in Advanced Software Engineering',
+        'Peer Recognition Award - AI/ML Course'
       ],
-      image: 'https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=300&fit=crop'
+
+
+      image: 'https://assets.collegedunia.com/public/college_data/images/studyabroad/appImage/72101%20cover.jpg?w=400&h=300&fit=crop'
     },
     {
       id: 2,
-      institution: 'Tech Academy',
-      degree: 'Certificate',
-      field: 'Full Stack Web Development',
-      duration: '2020 - 2021',
-      location: 'Online',
-      gpa: '4.0/4.0',
+      institution: 'B V Raju Institute of Technology',
+      degree: 'Bachelor of Technology',
+      field: 'Computer Science and Engineering',
+      duration: '2018 - 2022',
+      location: 'Narsapur, Telangana, India',
+      gpa: '8.81/10',
       description: [
-        'Intensive 6-month program covering modern web technologies',
-        'Built multiple full-stack applications using MERN stack',
-        'Collaborated on team projects using Agile methodologies',
+        'Focused on data structures, algorithms, and software engineering fundamentals',
+        'Completed major projects in Data Science with R and Mobile App Development',
+        'Explored Big Data Analytics, Web Technologies, and Virtual Reality',
+        'Maintained strong academic performance with consistent SGPA > 9.0 across semesters'
       ],
+
       achievements: [
         'Top Graduate of the Cohort',
         'Project Excellence Award',
         'Peer Recognition Award',
+        'Scored SGPA 10.0 in final semester',
+        'Ranked in top 5% of graduating class',
+        'Received consistent A+ in core subjects like DSA, OS, CN, and DBMS'
       ],
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop'
+
+      image: 'https://bvrit.ac.in/wp-content/uploads/2023/06/freshman.webp?w=400&h=300&fit=crop'
     },
   ];
 
@@ -197,7 +209,7 @@ const Education = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-16"
         >
-          <h3 className="text-2xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+          {/* <h3 className="text-2xl font-bold text-center mb-8 text-gray-900 dark:text-white">
             Professional Certifications
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
@@ -226,7 +238,7 @@ const Education = () => {
                 </p>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>

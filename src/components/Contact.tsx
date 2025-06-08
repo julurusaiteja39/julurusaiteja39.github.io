@@ -50,19 +50,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'saiteja@example.com',
-      href: 'mailto:saiteja@example.com',
+      value: 'julurusaiteja93@gmail.com',
+      href: 'mailto:julurusaiteja93@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+1 (314) 203-6470',
+      href: 'tel:+13142036470',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Saint Louis, MO',
       href: '#',
     },
   ];
@@ -71,21 +71,15 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/julurusaiteja39',
       color: 'hover:text-gray-900 dark:hover:text-white',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/saiteja-juluru-491970211/',
       color: 'hover:text-blue-600',
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com',
-      color: 'hover:text-blue-400',
-    },
+    }
   ];
 
   return (
