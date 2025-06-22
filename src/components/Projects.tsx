@@ -24,6 +24,16 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: 'Interactive Scene Understanding with SceneFun3D',
+      description: "3D scene understanding system for segmentation, language grounding, and motion execution.",
+      fullDescription: "Built an interactive 3D scene understanding system using the SceneFun3D dataset with Python, PyTorch3D, and Open3D. The solution enables object segmentation, language grounding (e.g., 'open the microwave door'), and motion estimation with 87% grounding accuracy. Integrated a transformer-based affordance model to map over 15 natural language commands to scene elements. Optimized voxel-level scene processing for real-time inference, reducing compute time by 28%. Designed for intelligent robotics and spatial reasoning applications.",
+      image: 'https://plus.unsplash.com/premium_photo-1742884841225-7e8961ec3611?w=600&h=400&fit=crop',
+      technologies: ['PyTorch3D', 'Open3D', 'Python', 'Transformers', '3D Segmentation', 'Natural Language Processing', 'SceneFun3D'],
+      github: 'https://github.com/julurusaiteja39/Scenefun3D',
+      category: 'ai_ml'
+    },
+    {
+      id: 2,
       title: 'Smart Attendance System',
       description: 'Face recognition-based attendance system with real-time logging and high accuracy.',
       fullDescription: 'Developed a facial recognition-based smart attendance system using FastAPI and MongoDB. The system processes over 100 concurrent requests for real-time attendance logging, achieving 95%+ identity verification accuracy. Features include secure face authentication, responsive React frontend, real-time analytics dashboard, and scalable architecture deployed on Heroku and Vercel. Designed to prevent proxy attendance and reduce manual effort by 80%.',
@@ -33,7 +43,7 @@ const Projects = () => {
       category: 'ai_ml'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Expense App for Visually Impaired',
       description: 'Voice-assisted expense tracking tailored for visually impaired users',
       fullDescription: 'An accessible expense management application designed specifically for visually impaired users. Built with React, Springboot, and speech recognition libraries, the app features voice input for adding transactions, audio feedback for confirmations, and high-contrast UI with screen reader support. Includes budget tracking, categorized spending insights, and offline capabilities to ensure inclusivity and independence in managing finances.',
@@ -43,7 +53,7 @@ const Projects = () => {
       category: 'ai_ml'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Sign Language Recognition',
       description: 'AI-based sign language recognition system using OpenCV and Python',
       fullDescription: 'A real-time sign language recognition system developed using OpenCV and Python, achieving 90% accuracy in gesture classification. Designed to bridge communication gaps for hearing-impaired individuals, the system leverages image preprocessing, hand segmentation, and machine learning techniques for dynamic sign detection. Features include live webcam input, gesture prediction overlay, and a user-friendly interface for accessibility testing and deployment.',
@@ -53,7 +63,7 @@ const Projects = () => {
       category: 'publication'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Gift Card Platform',
       description: "Digital gift card platform built with React, Ruby on Rails, and PostgreSQL.",
       fullDescription: "A full-stack web platform enabling users to purchase, send, and redeem digital gift cards. The frontend was developed using ReactJS for an interactive user experience, while the backend used Ruby on Rails to manage business logic and APIs. PostgreSQL was used for secure and scalable data storage. Features include gift card templates, user authentication, balance tracking, and admin controls for managing card issuances.",
@@ -63,7 +73,7 @@ const Projects = () => {
       category: 'fullstack'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Farmers Loan Processing',
       description: "Loan processing system for farmers built using Java Spring Boot.",
       fullDescription: "A robust backend system developed with Java Spring Boot to streamline the loan application and approval process for farmers. The system includes modules for loan application submission, eligibility validation, document verification, and status tracking. It ensures secure data handling, automated workflow management, and easy integration with financial institutions for faster disbursement of agricultural loans.",
@@ -73,7 +83,7 @@ const Projects = () => {
       category: 'fullstack'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Instagram Reels Clone',
       description: "A dynamic Instagram Reels clone built using JavaScript and modern web APIs.",
       fullDescription: "An interactive single-page application replicating core functionalities of Instagram Reels, developed using vanilla JavaScript, HTML5, and CSS3. Features include vertical video scrolling, autoplay, like/comment interactions, and smooth UI transitions. This project demonstrates efficient media rendering, responsive design principles, and real-time user interaction handling for short-form video content.",
