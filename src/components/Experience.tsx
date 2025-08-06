@@ -26,12 +26,12 @@ const Experience = () => {
       duration: 'Jan 2024 - June 2024',
       location: 'Saint Louis, MO',
       description: [
-        'Mentored 35+ students on software engineering fundamentals including OOP, Git, and full-stack development workflows.',
-        'Collaborated with faculty to design and implement 3 major coding projects focused on Agile, REST APIs, and modular architecture.',
-        'Conducted 50+ code reviews ensuring best practices, scalability, and clean coding standards using JavaScript, Flask, and PostgreSQL.',
-        'Built Python-based automation scripts that streamlined grading, reducing manual evaluation time by 25% across 100+ submissions.'
+        'Mentored over 35 students in AI engineering fundamentals, including agentic workflows, RAG architecture, and Language models finetuning and deployments using  Vertex AI by google.',
+        'Conducted bootcamps to teach prompt vs. context engineering, inference mechanisms, and evaluation techniques.',
+        'Delivered live demos on prompt jacking and adversarial attacks, and demonstrated mitigation using guardrails.',
+        'Proposed LLM-as-Judge with Modular RAG to critique students assignments resulting in saving 30% of facultys grading time and provided better feedback to students.'
       ],
-      technologies: ['JavaScript', 'Python', 'SQL', 'Flask', 'GitHub', 'Agile', 'REST APIs', 'Code Reviews', 'Automation Scripting'],
+      technologies: ['LangChain', 'RAG', 'Guardrails', 'FAISS', 'JavaScript', 'Python', 'SQL', 'Flask', 'GitHub', 'Agile', 'REST APIs', 'Code Reviews', 'Automation Scripting'],
       logo: 'https://www.slu.edu/marcom/tools-downloads/-img/logomark/slu-logomark-blue-rgb.png?w=100&h=100&fit=crop',
       website: 'https://www.slu.edu/'
     },
@@ -42,14 +42,14 @@ const Experience = () => {
       duration: 'Jan 2021 - July 2023',
       location: 'Hyderabad, Telangana, India',
       description: [
-        'Developed full-stack financial web applications using ReactJS, Ruby on Rails, and Spring Boot.',
-        'Improved application modularity and performance, boosting platform efficiency by 20%.',
-        'Optimized PostgreSQL queries, achieving 30% faster data retrieval in high-volume transaction modules.',
-        'Designed and maintained CI/CD pipelines using Docker and Jenkins, reducing deployment time by 35%.',
+        'Migrated legacy services from Ruby on Rails to Spring Boot and documented REST APIs using Swagger, improving backend performance and developer onboarding.',
+        'Developed responsive frontend interfaces with React/Redux and integrated OCR-based invoice parsing, reducing manual entry errors by 30%.',
+        'Built and deployed microservices using Jenkins, Docker, MongoDB, and AWS (EKS, ECS, RDS, DynamoDB) for accounts payable automation and ERP integration.',
+        'Assisted clients during onboarding, integrated Zoho CRM, and resolved 30+ production issues, enhancing user adoption and system stability.',
         'Implemented unit, integration, and E2E test suites, improving software quality by 25%.',
         'Collaborated in Agile sprints to deliver secure, scalable features while reducing code redundancy by 20% through legacy refactoring.'
       ],
-      technologies: ['Java Springboot', 'Ruby on Rails', 'ReactJS', 'Redux', 'PostgreSQL', 'Docker', 'Gitlab', 'Postman', 'Jenkins', 'Microservices'],
+      technologies: ['Java Springboot', 'Ruby on Rails', 'ReactJS', 'Redux', 'PostgreSQL', 'Docker', 'Gitlab', 'Postman', 'Jenkins', 'AWS', 'Zoho CRM', 'Accounts Payable', 'Microservices'],
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7CsEAv2f7ral3OD_ZlWJ7S1FRK_vBPpwu0Q&s?w=100&h=100&fit=crop',
       website: 'https://www.zaggle.in/'
     },

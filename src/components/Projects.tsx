@@ -24,7 +24,7 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Interactive Scene Understanding with SceneFun3D',
+      title: 'Interactive Scene Understanding with SceneFun3D ',
       description: "3D scene understanding system for segmentation, language grounding, and motion execution.",
       fullDescription: "Built an interactive 3D scene understanding system using the SceneFun3D dataset with Python, PyTorch3D, and Open3D. The solution enables object segmentation, language grounding (e.g., 'open the microwave door'), and motion estimation with 87% grounding accuracy. Integrated a transformer-based affordance model to map over 15 natural language commands to scene elements. Optimized voxel-level scene processing for real-time inference, reducing compute time by 28%. Designed for intelligent robotics and spatial reasoning applications.",
       image: 'https://plus.unsplash.com/premium_photo-1742884841225-7e8961ec3611?w=600&h=400&fit=crop',
@@ -34,7 +34,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Smart Attendance System',
+      title: 'Smart Attendance Tracker with Face Recognition',
       description: 'Face recognition-based attendance system with real-time logging and high accuracy.',
       fullDescription: 'Developed a facial recognition-based smart attendance system using FastAPI and MongoDB. The system processes over 100 concurrent requests for real-time attendance logging, achieving 95%+ identity verification accuracy. Features include secure face authentication, responsive React frontend, real-time analytics dashboard, and scalable architecture deployed on Heroku and Vercel. Designed to prevent proxy attendance and reduce manual effort by 80%.',
       image: 'https://plus.unsplash.com/premium_photo-1680807868966-90a84c68c944?w=600&h=400&fit=crop',
@@ -44,7 +44,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Expense App for Visually Impaired',
+      title: 'Accessible Expense Tracker for the Visually Impaired',
       description: 'Voice-assisted expense tracking tailored for visually impaired users',
       fullDescription: 'An accessible expense management application designed specifically for visually impaired users. Built with React, Springboot, and speech recognition libraries, the app features voice input for adding transactions, audio feedback for confirmations, and high-contrast UI with screen reader support. Includes budget tracking, categorized spending insights, and offline capabilities to ensure inclusivity and independence in managing finances.',
       image: 'https://plus.unsplash.com/premium_photo-1681582863624-24337f436b78?w=600&h=400&fit=crop',
