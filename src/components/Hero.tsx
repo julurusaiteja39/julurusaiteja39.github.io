@@ -77,7 +77,7 @@ const Hero = () => {
                 View My Work
               </Button>
               <a 
-                href="https://drive.google.com/uc?export=download&id=1rxDn44HlHdXa-GFhKNb0-FaoN2YGQXP9"
+                href="https://drive.google.com/file/d/1Z4i8jxYlE6JWMa5X9vu04jiNe4MfGr8R/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
