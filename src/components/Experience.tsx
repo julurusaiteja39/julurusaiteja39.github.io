@@ -26,10 +26,10 @@ const Experience = () => {
       duration: 'Jan 2024 - June 2024',
       location: 'Saint Louis, MO',
       description: [
-        'Mentored over 35 students in AI engineering fundamentals, including agentic workflows, RAG architecture, and Language models finetuning and deployments using  Vertex AI by google.',
-        'Conducted bootcamps to teach prompt vs. context engineering, inference mechanisms, and evaluation techniques.',
-        'Delivered live demos on prompt jacking and adversarial attacks, and demonstrated mitigation using guardrails.',
-        'Proposed LLM-as-Judge with Modular RAG to critique students assignments resulting in saving 30% of facultys grading time and provided better feedback to students.'
+        'Mentored 35+ students on AI engineering foundations, including agentic workflows, RAG architecture, and deployment patterns using Vertex AI.',
+        'Conducted hands-on bootcamps covering prompt engineering, context strategies, inference optimization, and evaluation methods.',
+        'Designed and demonstrated secure LLM workflows, including prompt jacking, adversarial examples, and guardrail implementations.',
+        'Built a prototype grading automation pipeline using LangChain, embeddings, and vector search to demonstrate rubric-based evaluation, later adopted as part of course resources.'
       ],
       technologies: ['LangChain', 'RAG', 'Guardrails', 'FAISS', 'JavaScript', 'Python', 'SQL', 'Flask', 'GitHub', 'Agile', 'REST APIs', 'Code Reviews', 'Automation Scripting'],
       logo: 'https://www.slu.edu/marcom/tools-downloads/-img/logomark/slu-logomark-blue-rgb.png?w=100&h=100&fit=crop',
@@ -39,17 +39,17 @@ const Experience = () => {
       id: 2,
       company: 'Zaggle Prepaid Ocean Services',
       position: 'Full Stack Developer',
-      duration: 'Jan 2021 - July 2023',
+      duration: 'Jan 2022 - July 2023',
       location: 'Hyderabad, Telangana, India',
       description: [
-        'Migrated legacy services from Ruby on Rails to Spring Boot and documented REST APIs using Swagger, improving backend performance and developer onboarding.',
-        'Developed responsive frontend interfaces with React/Redux and integrated OCR-based invoice parsing, reducing manual entry errors by 30%.',
-        'Built and deployed microservices using Jenkins, Docker, MongoDB, and AWS (EKS, ECS, RDS, DynamoDB) for accounts payable automation and ERP integration.',
-        'Assisted clients during onboarding, integrated Zoho CRM, and resolved 30+ production issues, enhancing user adoption and system stability.',
-        'Implemented unit, integration, and E2E test suites, improving software quality by 25%.',
-        'Collaborated in Agile sprints to deliver secure, scalable features while reducing code redundancy by 20% through legacy refactoring.'
+        'Migrated Ruby on Rails APIs to Spring Boot to address long response times, improving backend reliability and reducing response latency by approximately 200-300ms per request.',
+        'Developed and enhanced frontend UI applications using React/Redux, collaborating with designers using Figma to translate wireframes into responsive, production-ready interfaces.',
+        'Built and deployed microservices using Jenkins, Docker, MongoDB, and Azure, ensuring reliable and scalable processing for accounts-payable automation.',
+        'Implemented a Nanonets-based invoice data extraction microservice that processed more than 1,000 invoices monthly and provided a plug-and-play API for multiple product teams.',
+        'Enhanced model accuracy by manually annotating a diverse dataset of low-quality and handwritten invoices, reducing extraction failures by roughly 25% across production workloads.',
+        'Resolved over 30+ production issues and enhanced monitoring by integrating Errbit for exception tracking, improving system reliability and accelerating root-cause analysis.'
       ],
-      technologies: ['Java Springboot', 'Ruby on Rails', 'ReactJS', 'Redux', 'PostgreSQL', 'Docker', 'Gitlab', 'Postman', 'Jenkins', 'AWS', 'Zoho CRM', 'Accounts Payable', 'Microservices'],
+      technologies: ['Java Springboot', 'Ruby on Rails', 'ReactJS', 'Redux', 'Nanonets', 'PostgreSQL', 'Docker', 'Gitlab', 'Postman', 'Jenkins', 'AWS', 'Zoho CRM', 'Accounts Payable', 'Microservices'],
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7CsEAv2f7ral3OD_ZlWJ7S1FRK_vBPpwu0Q&s?w=100&h=100&fit=crop',
       website: 'https://www.zaggle.in/'
     },

@@ -23,6 +23,16 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
+      id: 0,
+      title: 'AI-Native Expense Tracker',
+      description: 'Agentic receipt-processing workflow connecting OCR, LangGraph, and FAISS for rich spending insights.',
+      fullDescription: 'Built an automated receipt management system combining FastAPI microservices, a React dashboard, and LangGraph agents to turn uploaded receipts into structured transactions. The pipeline chains Tesseract OCR, custom parsing, intelligent chunking, embeddings, and FAISS similarity search so users can query 50+ receipts semantically. Containerized with Docker and deployed on Azure Container Apps to expose a secure API and real-time UI for uploading images and reviewing categorized transactions.',
+      image: 'https://plus.unsplash.com/premium_photo-1667520477159-e8947dcc83e8?w=600&h=400&fit=crop',
+      technologies: ['FastAPI', 'React', 'LangGraph', 'FAISS', 'Tesseract OCR', 'Docker', 'Azure Container Apps', 'LangChain'],
+      github: 'https://github.com/julurusaiteja39/ExpenseTracker',
+      category: 'ai_ml'
+    },
+    {
       id: 1,
       title: 'Interactive Scene Understanding with SceneFun3D ',
       description: "3D scene understanding system for segmentation, language grounding, and motion execution.",

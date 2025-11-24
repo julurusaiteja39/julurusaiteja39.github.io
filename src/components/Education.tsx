@@ -48,11 +48,11 @@ const Education = () => {
     },
     {
       id: 2,
-      institution: 'B V Raju Institute of Technology',
+      institution: 'Jawaharlal Nehru Technological University(JNTUH)',
       degree: 'Bachelor of Technology',
       field: 'Computer Science and Engineering',
       duration: '2018 - 2022',
-      location: 'Narsapur, Telangana, India',
+      location: 'Hyderabad, Telangana, India',
       gpa: '8.81/10',
       description: [
         'Focused on data structures, algorithms, and software engineering fundamentals',
@@ -70,7 +70,7 @@ const Education = () => {
         'Received consistent A+ in core subjects like DSA, OS, CN, and DBMS'
       ],
 
-      image: 'https://bvrit.ac.in/wp-content/uploads/2023/06/freshman.webp?w=400&h=300&fit=crop'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjplBY2SOZwETob2dvrzrnYNPSeO0VB6fIw&s/250px-JNTU_Hyderabad_logo.png?w=400&h=300&fit=crop'
     },
   ];
 
